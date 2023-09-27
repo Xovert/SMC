@@ -16,8 +16,8 @@
         <div class="header-navbar">
             
             <a href="#"> Calculator </a>
-            <a href="#"> Patches </a>
             <a href="#"> Discord </a>
+            <a href="#" style="color:red"> Article (Coming soon)</a>
             <a href="#"> </a>
         </div>
         <div class="header-user hide-small">
@@ -26,10 +26,9 @@
             </a>
         </div>
     </div>
+
     <img src="./assets/top.png" alt="Zeus is not here">
     <div class="calculator">
-        
-
 
         <h1>Steam Market Calculator</h1>
         <div class="dropdown">
@@ -41,14 +40,14 @@
                 <option value="option3">Other Game</option>
             </select>
         </div>
-
+        <h4>Item's name</h4>
+        <input type="text">
         <label for="cost">Enter Cost:</label>
         <input type="number" id="costInput" placeholder="Enter cost">
-        <label for="Revenue">Enter Revenue:</label>
-        <input type="number" id="revenueinput" placeholder="Enter revenue">
-
         <button onclick="2">Calculate</button>
-        <p id="profit">profit: </p>
+
+        <p id="profit">You Must Sell The Item at : </p>
+
       </div>    
 </body>
 </html>
