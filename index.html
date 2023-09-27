@@ -14,13 +14,11 @@
             </button>
         </div>
         <div class="header-navbar">
-            <a href="#">Sales</a>
-            <a href="#">Charts</a>
-            <a href="#">Calculator</a>
-            <a href="#">Calender</a>
-            <a href="#">Patches</a>
-            <a href="#">Discord</a>
-            <a href="#">Find Games</a>
+            
+            <a href="#"> Calculator </a>
+            <a href="#"> Patches </a>
+            <a href="#"> Discord </a>
+            <a href="#"> </a>
         </div>
         <div class="header-user hide-small">
             <a class="header-login" href="#">
@@ -28,19 +26,27 @@
             </a>
         </div>
     </div>
+    <img src="./assets/top.png" alt="Zeus is not here">
     <div class="calculator">
-        <h1>Profit Calculator</h1>
+        
+
+
+        <h1>Steam Market Calculator</h1>
+        <div class="dropdown">
+            <h4>Choose Game</h4>
+            <select id="dropdownInput">
+                <option value="option1">CSGO</option>
+                <option value="option2">Dota 2</option>
+                <option value="option3">TF2</option>
+                <option value="option3">Other Game</option>
+            </select>
+        </div>
+
         <label for="cost">Enter Cost:</label>
         <input type="number" id="costInput" placeholder="Enter cost">
         <label for="Revenue">Enter Revenue:</label>
         <input type="number" id="revenueinput" placeholder="Enter revenue">
-        <div class="dropdown">
-            <select id="dropdownInput">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select>
-        </div>
+
         <button onclick="2">Calculate</button>
         <p id="profit">profit: </p>
       </div>    
