@@ -17,7 +17,7 @@
         <div class="header-navbar">
             
             <a href="#"> Calculator </a>
-            <a href="#"> Discord </a>
+            <a href="https://discord.gg/fyvrhx48pz"> Discord </a>
             <a href="#" style="color:red"> Article (Coming soon)</a>
             <a href="#"> </a>
         </div>
@@ -43,7 +43,7 @@
             <label for="Item Name"><b>Enter Item Name</b></label>
             <input type="text" id="itemName">
             <label for="cost"><b>Enter Cost:</b></label>
-            <input type="text" id="cost" placeholder="25000" min="1" inputmode="numeric" >
+            <input type="text" id="cost" placeholder="Insert Cost Here" min="1" inputmode="numeric" >
             <button onclick="calculate()" type="submit" id="calc">Calculate</button>
             <p id="profit"></p>
       </div>    
