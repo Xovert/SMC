@@ -49,11 +49,7 @@
         <label for="cost">Enter Cost:</label>
         <input type="number" id="costInput" placeholder="Enter cost">
         <button onclick="2">Calculate</button>
-
-        <p id="profit">You Must Sell The Item at : </p>
-
       </div> 
-      
       <div class="item-details">
          <table class="HistoryTable">
             <tr>
