@@ -30,7 +30,7 @@
     <img src="./assets/top.png" alt="Zeus is not here">
     <div class="flex-container">
     <div class="left-section">
-        <img src="../SMC-main/assets/Untitled_design__6_-removebg-preview.png" alt="no image">
+        <img src="../assets/Untitled_design__6_-removebg-preview.png" alt="no image">
     </div>
     <div class="calculator">
 
@@ -76,7 +76,7 @@
         </div>    
     </div>
     <div class="right-section">
-        <img src="../SMC-main/assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
+        <img src="../assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
     </div>
 </div>   
 </body>
