@@ -14,7 +14,6 @@
             </button>
         </div>
         <div class="header-navbar">
-            
             <a href="#"> Calculator </a>
             <a href="#"> Discord </a>
             <a href="#" style="color:red"> Article (Coming soon)</a>
@@ -26,11 +25,12 @@
             </a>
         </div>
     </div>
-
-    <img src="./assets/top.png" alt="Zeus is not here">
+    <div class="Zeus">
+        <img src="./assets/top.png" alt="Zeus is not here">
+    </div>
     <div class="flex-container">
     <div class="left-section">
-        <img src="../assets/Untitled_design__6_-removebg-preview.png" alt="no image">
+        <img src="../SMC-main/assets/Untitled_design__6_-removebg-preview.png" alt="no image">
     </div>
     <div class="calculator">
 
@@ -55,28 +55,55 @@
       </div> 
       
       <div class="item-details">
-        <div class="item-details-box">
-            <div class="Name-Item">
-                <div class="ItemGame">
-                    <h4>Game Name:</h4>
-                    <p id="GameName"> CSGO </p>
-                    <h4>Item Name:</h4>
-                    <p id="ItemName"> Dragon Lore</p>
-                </div>
-            </div>
-            <div class="Name-Item">
-                <div class="PriceSell">
-                    <h4>Price to Sell:</h4>
-                    <p id="ToSell">100</p>
-                </div>
-            </div>
-        </div>
-        <div class="InsideBox">
-
-        </div>    
+         <table class="HistoryTable">
+            <tr>
+                <thead>
+                    <th>
+                        Item Name
+                    </th>
+                    <th>
+                        Price to Sell
+                    </th>
+                </thead>
+            </tr>
+            <tbody>
+                <tr >
+                    <td>
+                        Dragon Lore
+                    </td>
+                    <td>
+                        100$
+                    </td>
+                </tr>
+                <tr >
+                    <td>
+                        Dragon Lore
+                    </td>
+                    <td>
+                        100$
+                    </td>
+                </tr>
+                <tr >
+                    <td>
+                        Dragon Lore
+                    </td>
+                    <td>
+                        100$
+                    </td>
+                </tr>
+                <tr >
+                    <td>
+                        Dragon Lore
+                    </td>
+                    <td>
+                        100$
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
     </div>
     <div class="right-section">
-        <img src="../assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
+        <img src="../SMC-main/assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
     </div>
 </div>   
 </body>
