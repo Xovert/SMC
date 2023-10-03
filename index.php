@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SteamCalculator</title>
+    <script src="/getAns.js" type="text/javascript"></script>
     <link rel="stylesheet" href="assets/main.css">
 </head>
 <body>
@@ -30,76 +31,56 @@
     </div>
     <div class="flex-container">
     <div class="left-section">
-        <img src="../SMC-main/assets/Untitled_design__6_-removebg-preview.png" alt="no image">
+        <img src="../assets/Untitled_design__6_-removebg-preview.png" alt="no image">
     </div>
     <div class="calculator">
 
         <h1>Steam Market Calculator</h1>
         <div class="dropdown">
             <h4>Choose Game</h4>
-            <select id="dropdownInput">
-                <option value="option1">CSGO</option>
-                <option value="option2">Dota 2</option>
-                <option value="option3">TF2</option>
-                <option value="option3">Other Game</option>
+            <select name="game" id="dropdownInput">
+                <option value="spec">CSGO</option>
+                <option value="spec">Dota 2</option>
+                <option value="spec">TF2</option>
+                <option value="general">Other Game</option>
             </select>
         </div>
-        <h4>Item's name</h4>
-        <input type="text">
+        <label for="Item Name"><b>Enter Item Name</b></label>
+        <input type="text" id="itemName">
         <label for="cost">Enter Cost:</label>
-        <input type="number" id="costInput" placeholder="Enter cost">
-        <button onclick="2">Calculate</button>
+        <input type="text" id="cost" placeholder="25000" min="1" inputmode="numeric">
+        <button onclick="calculate()" type="submit" id="calc">Calculate</button>
       </div> 
       <div class="item-details">
-         <table class="HistoryTable">
-            <tr>
-                <thead>
-                    <th>
-                        Item Name
-                    </th>
-                    <th>
-                        Price to Sell
-                    </th>
-                </thead>
-            </tr>
+         <table id="resultTable" class="HistoryTable">
+            <thead>
+                <th>Item Name</th>
+                <th>Price to Sell (in rp)</th>
+            </thead>
             <tbody>
                 <tr >
-                    <td>
-                        Dragon Lore
-                    </td>
-                    <td>
-                        100$
-                    </td>
+                    <td>Dragon Lore</td>
+                    <td>100</td>
+                </tr>
+                    <td>Dragon Lore</td>
+                    <td>100</td>
+                <tr >
+                    <td>Dragon Lore</td>
+                    <td>100</td>
                 </tr>
                 <tr >
-                    <td>
-                        Dragon Lore
-                    </td>
-                    <td>
-                        100$
-                    </td>
+                    <td>Dragon Lore</td>
+                    <td>100</td>
                 </tr>
                 <tr >
-                    <td>
-                        Dragon Lore
-                    </td>
-                    <td>
-                        100$
-                    </td>
-                </tr>
-                <tr >
-                    <td>
-                        Dragon Lore
-                    </td>
-                    <td>
-                        100$
-                    </td>
+                    <td>Dragon Lore</td>
+                    <td>100</td>
                 </tr>
             </tbody>
         </table>    
     </div>
     <div class="right-section">
-        <img src="../SMC-main/assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
+        <img src="../assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
     </div>
 </div>   
 </body>
