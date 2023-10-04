@@ -45,9 +45,11 @@ body {
 }
 
 .header-navbar{
-    margin-left: 200px;
+    top: 0;
+    margin-left: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-navbar>a {
@@ -82,13 +84,17 @@ a {
 }
 
 .calculator {
-    max-width: 400px;
+    max-width: 45%;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #A0C0D9;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: inline-block;
+    align-items: flex-start;
+    height: 448px;
 }
 
 .calculator h1 {
@@ -121,4 +127,88 @@ a {
     padding: 10px;
     margin-bottom: 10px;
     _background-color: #1a1a1a;
+}
+
+.item-details {
+    max-width: 45%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #A0C0D9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    height: 448px;
+}
+
+.item-details-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.Name-Item{
+    display: flex;
+    flex-direction: column; 
+    width: 200px;
+    align-items: center;
+}
+
+.ItemGame h4, .Name-item h4, .PriceSell h4, .ToSell h4{
+    margin-bottom: 5px;
+}
+
+.ItemGame p, .PriceSell p{
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left-section {
+    max-width: 50%;
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+.left-section img {
+    width: 100%;
+    max-width: 200%; 
+    height: auto;
+}
+
+.InsideBox {
+    max-width: 45%;
+    margin: 20px;
+    padding: 120px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}   
+
+.right-section{
+    max-width: 50%;
+    padding: 20px; 
+    margin-bottom: 20px;
+}
+
+.HistoryTable thead{
+    background-color: grey;
+}
+
+.HistoryTable tbody{
+    background-color: lightgrey;
+}
+
+.HistoryTable{
+    background-color: black;
+    width: 400px;
+    text-align: center;
+}
+
+.Zeus img{
+    margin-top: 100px;
 }
