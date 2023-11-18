@@ -58,8 +58,7 @@
                 <th>Price to Sell (in rp)</th>
             </thead>
             <tbody>
-                <td>Dragon Lore</td>
-                <td>Price to Sell (in rp)</td>
+                
             </tbody>
         </table>    
     </div>
