@@ -5,8 +5,6 @@ function calculate() {
     var finalCost
     if(game.value === "general"){
         finalCost = cost*1.05
-    }else{
-        finalCost = cost*1.15 
     }
     addRow(itemName, finalCost)
 }
