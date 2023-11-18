@@ -16,7 +16,7 @@
         </div>
         <div class="header-navbar">
             <a href="#"> Calculator </a>
-            <a href="https://discord.gg/fyvrhx48pz"> Discord </a>
+            <a href="https://discord.gg/HqZrp82nAB"> Discord </a>
             <a href="#" style="color:red"> Article (Coming soon)</a>
             <a href="#"> </a>
         </div>
