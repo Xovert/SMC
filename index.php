@@ -65,6 +65,12 @@
     <div class="right-section">
         <img src="../assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
     </div>
+
+<div class="footer">
+     &copy; 2023 Steam Market Calculator. All rights reserved.
+</div>
+
+
 </div>   
 </body>
 </html>
