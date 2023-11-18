@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="Zeus">
-        <img src="./assets/top.png" alt="Zeus is not here">
+        <img src="./assets/logo.png" alt="Zeus is not here">
     </div>
     <div class="flex-container">
     <div class="left-section">
@@ -46,9 +46,9 @@
             </select>
         </div>
         <label for="Item Name"><b>Enter Item Name</b></label>
-        <input type="text" id="itemName">
+        <input type="text" placeholder="put your item name here" id="itemName">
         <label for="cost">Enter Cost:</label>
-        <input type="text" id="cost" placeholder="25000" min="1" inputmode="numeric">
+        <input type="text" id="cost" placeholder="put the cost of your item here" min="1" inputmode="numeric">
         <button onclick="calculate()" type="submit" id="calc">Calculate</button>
       </div> 
       <div class="item-details">
@@ -58,24 +58,7 @@
                 <th>Price to Sell (in rp)</th>
             </thead>
             <tbody>
-                <tr >
-                    <td>Dragon Lore</td>
-                    <td>100</td>
-                </tr>
-                    <td>Dragon Lore</td>
-                    <td>100</td>
-                <tr >
-                    <td>Dragon Lore</td>
-                    <td>100</td>
-                </tr>
-                <tr >
-                    <td>Dragon Lore</td>
-                    <td>100</td>
-                </tr>
-                <tr >
-                    <td>Dragon Lore</td>
-                    <td>100</td>
-                </tr>
+                
             </tbody>
         </table>    
     </div>
