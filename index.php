@@ -52,15 +52,34 @@
         <button onclick="calculate()" type="submit" id="calc">Calculate</button>
       </div> 
       <div class="item-details">
+        <form action="" class="search-bar">
+            <input type="text" placeholder="search" name="">
+            <button class="search-button"><ion-icon name="search-circle-outline"></ion-icon></button>
+        </form>
+        <div class="tables-size">
          <table id="resultTable" class="HistoryTable">
             <thead>
                 <th>Item Name</th>
                 <th>Price to Sell (in rp)</th>
+                <th>Action</th>
             </thead>
             <tbody>
-                
+                <td>asd</td>
+                <td>asd</td>
+                <td>
+                    <button class="Edit-button"><ion-icon name="create-outline"></ion-icon></button>
+                    <button class="Delete-button"><ion-icon name="trash-outline"></ion-icon></td></button>
             </tbody>
         </table>    
+        </div>
+        <div class="export-result">
+        <button class="export">
+            <span>Total Result</span>
+        </button>
+        <button class="total-result">
+            <span>Export</span>
+        </button>
+        </div>
     </div>
     <div class="right-section">
         <img src="../assets/Untitled_design__3_-removebg-preview.png" alt="no pic">
@@ -72,5 +91,7 @@
 
 
 </div>   
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

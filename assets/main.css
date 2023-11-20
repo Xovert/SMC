@@ -224,3 +224,46 @@ a {
     bottom: 0;
     width: 100%;
 }
+
+.tables-size {
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.export {
+    margin-left: 50px;
+    font-size: 16px;
+}
+
+.search-bar {
+    width: 80%;
+    display: flex;
+    background: white;
+    margin-left: 45px;
+    padding: 12px 12px  ;
+}
+
+.search-bar input{
+    flex: 1;
+    border: none;
+    outline: none;
+    
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.export-result{
+    display: flex;
+}
+
+.total-result{
+    margin-left: 250px;
+}
