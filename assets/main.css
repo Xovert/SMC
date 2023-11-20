@@ -60,6 +60,11 @@ body {
     white-space: nowrap;
 }
 
+.header-navbar h4{
+    color: white;
+    margin-left: 885px;
+}
+
 a {
     color: #00aff4;
     text-decoration: none;
@@ -266,4 +271,29 @@ a {
 
 .total-result{
     margin-left: 250px;
+}
+
+.login-button{
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+.grid-main-form label{
+    color: white;    
+}
+
+.button-border{
+    border: 0;
+    border-radius: 50%;
+}
+
+#email{
+    margin-left: 45px;
+}
+
+.help-block{
+    color: white;
+    margin-left: 75px;
 }

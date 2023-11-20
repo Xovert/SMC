@@ -26,13 +26,17 @@
                 <input id="username" name="username" type="text" placeholder="" class="form-control">
             </fieldset>
             <fieldset class="form-group form-success">
+                <label for="email" class="email">EMAIL</label>
+                <input id="email" name="email" type="text" placeholder="" class="form-control">
+            </fieldset>
+            <fieldset class="form-group form-success">
                 <label for="password">PASSWORD</label>
                 <input id="password" name="password" type="password" placeholder="" class="form-control">
             </fieldset>
             <br>
             <div class="button-border">
                 <button class="login-button" name="login" value="Login">Login</button>
-                <div class="help-block">Not a member? <a href="#">Sign up</a></div>
+                <div class="help-block">Only noble users are allowed to bypass access here</div>
             </div>
         </form>
     </div>
