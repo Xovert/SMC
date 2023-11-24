@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $isLoggedIn = (isset($_SESSION['is_login'])) ? true : false;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +29,17 @@
             <a href="#"> </a>
         </div>
         <div class="header-user hide-small">
-            <a class="header-login" href="./login.php">
-                <span>Sign in</span>
-            </a>
+            <?php
+            if(!$isLoggedIn){
+                echo '<a class="header-login" href="./login.php">';
+                echo '<span>Sign in</span>';
+                echo '</a>';
+            }else{
+                echo '<a class="header-login" href="./controllers/logout.php">';
+                echo '<span>Log out</span>';
+                echo '</a>';
+            }
+            ?>
         </div>
     </div>
     <div class="Zeus">

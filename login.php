@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['is_login'])){
+        die("User is already logged on");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,18 +42,18 @@
     </div>
     <div class="grid-main-form">
         <form action="controllers/AuthController.php" method="POST">
-            <input type="hidden" name="csrf_token" value="<?= $_SESSION['csrf_token']; ?>" />
+            <input type="hidden" name="csrf_token"  value="" />
             <fieldset class="form-group form-success">
                 <label for="username">USERNAME</label>
-                <input id="username" name="username" type="text" placeholder="" class="form-control">
+                <input id="username" name="username" type="text"    placeholder="username" class="form-control" required>
             </fieldset>
             <fieldset class="form-group form-success">
                 <label for="password">PASSWORD</label>
-                <input id="password" name="password" type="password" placeholder="" class="form-control">
+                <input id="password" name="password" type="password" placeholder="password" class="form-control" required>
             </fieldset>
             <br>
             <div class="button-border">
-                <button class="login-button" name="login" value="Login">Login</button>
+                <button type="submit" class="login-button" name="login" value="Login">Login</button>
                 <div class="help-block">Not a member?
                     <a href="./signUp.php" style="color:red">Sign up here!</a>
                 </div>
