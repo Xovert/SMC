@@ -153,44 +153,54 @@ function downloadToFile(content, filename, contentType) {
       URL.revokeObjectURL(a.href);
 }
 
+// $(document).on("keyup", "#searchItem", function(){
+//     alert("WOARHHH")
+// })
 
-// var $rows = $('#resultTable tbody tr');
-// $('#search').keyup(debounce(function() {
-
+// var $rows = $('#resultTable').find('tr');
+// $(document).on("keyup", "#searchItem", debounce(function() { 
 //   var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
 //     reg = RegExp(val, 'i'),
 //     text;
-
-//   $rows.show().filter(function() {
-//     text = $(this).text().replace(/\s+/g, ' ');
+//     $rows.show().filter(function() {
+//         text = $(this).text().replace(/\s+/g, ' ');
+//         alert("WOI")
 //     return !reg.test(text);
 //   }).hide();
 // }, 300));
 
-// var $rows = $('#resultTable tr');
-// $(document).on("keyup", "#searchItem", function() {
-//     var val = '^(?=.*\\b' + $.trim($(this).val()).split(/\s+/).join('\\b)(?=.*\\b') + ').*$',
-//         reg = RegExp(val, 'i'),
-//         text;
+$(document).on("keyup", "#searchItem", debounce(function() {
+    var input, filter, table, tr, td, i;
+    input = $("#searchItem");
+    filter = input.val().toUpperCase();
+    table = $("#resultTable");
+    tr = table.find("tbody").find("tr");
+    tr.each(function () {
+        var linha = $(this);
+        $(this).find('td:first-child').each(function () {
+            td = $(this);
+            if (td.html().toUpperCase().indexOf(filter) > -1) {
+                linha.show();
+                return false;
+            } else {
+                linha.hide();
+            }
+        })
+    })
+},300))
 
-//     $rows.show().filter(function() {
-//         text = $(this).text().replace(/\s+/g, ' ');
-//         return !reg.test(text);
-//     }).hide();
-// });
-
-// function debounce(func, wait, immediate) {
-//     var timeout;
-//     return function() {
-//       var context = this,
-//         args = arguments;
-//       var later = function() {
-//         timeout = null;
-//         if (!immediate) func.apply(context, args);
-//       };
-//       var callNow = immediate && !timeout;
-//       clearTimeout(timeout);
-//       timeout = setTimeout(later, wait);
-//       if (callNow) func.apply(context, args);
-//     };
-// };
+function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+};
