@@ -23,7 +23,7 @@
             </button>
         </div>
         <div class="header-navbar">
-            <a href="calculator.php"> Calculator </a>
+            <a href="./calculator.php"> Calculator </a>
             <a href="https://discord.gg/HqZrp82nAB"> Discord </a>
             <a href="#" style="color:red"> Article (Coming soon)</a>
             <a href="#"> </a>

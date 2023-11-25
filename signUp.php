@@ -39,7 +39,7 @@
         </div>
     </div>
     <div class="grid-main-form">
-        <form action="controllers/register.php" method="POST">
+        <form action="./controllers/register.php" method="POST">
             <input type="hidden" name="csrf_token" value="" />
             <fieldset class="form-group form-success">
                 <label for="username">USERNAME</label>

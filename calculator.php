@@ -65,7 +65,7 @@
         <!-- Input Item -->
         <?php
             if($isLoggedIn){
-                echo'<form action="/controllers/itemController.php" method="POST">';
+                echo'<form action="./controllers/itemController.php" method="POST">';
             }
         ?>
             <div class="dropdown">

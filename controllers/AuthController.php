@@ -14,7 +14,7 @@
 
     function errorMessage(){
         $_SESSION["error_message"] = "Login Failed";
-        header("Location: login.php");
+        header("Location: ../login.php");
         die();
     }
 

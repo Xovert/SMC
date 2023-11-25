@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="grid-main-form">
-        <form action="controllers/AuthController.php" method="POST">
+        <form action="./controllers/AuthController.php" method="POST">
             <input type="hidden" name="csrf_token"  value="" />
             <fieldset class="form-group form-success">
                 <label for="username">USERNAME</label>
